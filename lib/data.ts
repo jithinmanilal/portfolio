@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import Cakesmiths from "@/public/Cakesmiths.png";
+import Nextnode from "@/public/Nextnode.png";
+import Pagen from "@/public/Pagen.png";
 
 export const links = [
   {
@@ -35,52 +35,71 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Brototype",
+    location: "Cochin, Kerala",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated Python full-stack web development program, gaining expertise in utilizing the Django framework, React.js, and PostgreSQL within a dynamic and collaborative learning environment.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Nov 2022 - Nov 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Shibu Enterprises | Manager",
+    location: "Raigad, Maharashtra",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Oversaw supplier, customer, and third-party vendor relationships while efficiently managing financial obligations. Executed bank deposits and ensured accurate reconciliation of financial statements.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "May 2020 - Jun 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "FAB | Sr. Relationship Officer",
+    location: "Dubai, UAE",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Worked as a relationship officer & I have successfully navigated various responsibilities centered around building and maintaining strong relationships with clients",
+      icon: React.createElement(CgWorkAlt),
+    date: "Sep 2018 - Jul 2019",
+  },
+  {
+    title: "ADCB | Sr. Relationship Officer",
+    location: "Abu Dhabi, UAE",
+    description:
+      "Addressed the banking needs of target market companies, providing personalized solutions such as personal loans, credit cards, current accounts, and savings accounts.",
+      icon: React.createElement(CgWorkAlt),
+    date: "Jan 2018 - Jul 2018",
+  },
+  {
+    title: "Doha Bank | Relationship Officer",
+    location: "Abu Dhabi, UAE",
+    description:
+      "Implemented effective marketing strategies to expand market presence, including onboarding new companies and promoting new products.",
+      icon: React.createElement(CgWorkAlt),
+    date: "May 2014 - Nov-2017",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Cakesmiths",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "E-commerce project with cakes as a product. Features include cart, wishlist, coupons and orders for the user side.",
+    tags: ["Django", "Ajax", "Bootstrap", "Figma", "Postgresql"],
+    imageUrl: Cakesmiths,
+    siteUrl: "https://www.cakesmiths.shop",
   },
   {
-    title: "rmtDev",
+    title: "Nextnode",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A fully functional social media project with options to set user preferences for posts.",
+    tags: ["Django", "Django Rest Framework", "Tailwind", "React.js", "Redux Toolkit"],
+    imageUrl: Nextnode,
+    siteUrl: "https://nextnode.jithinmanilal.site",
   },
   {
-    title: "Word Analytics",
+    title: "Pagen",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A password generator app to create random passwords and save them for further applications.",
+    tags: ["Django", "Postgresql", "React.js", "Css", "Figma", "Context API"],
+    imageUrl: Pagen,
+    siteUrl: "https://github.com/jithinmanilal/pagen",
   },
 ] as const;
 
@@ -90,15 +109,16 @@ export const skillsData = [
   "Python",
   "Django",
   "Flask",
-  "FastApi",
+  "FastAPI",
   "JavaScript",
   "TypeScript",
-  "React",
+  "React.js",
   "Next.js",
   "Git",
   "Tailwind",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
+  "Bootstrap",
   "PostgreSQL",
+  "MongoDB",
+  "Redux-Toolkit",
+  "GraphQL",
 ] as const;

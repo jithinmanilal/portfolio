@@ -1,22 +1,12 @@
 "use client";
-import React, { useEffect } from 'react';
+import React from 'react';
 import SectionHeader from './SectionHeader';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/activeSectionContext';
+import { useSectionInView } from '@/lib/hooks';
 
 const About = () => {
 
-  const {ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveSection } = useActiveSectionContext();
-  
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("About")
-    }
-  },[inView, setActiveSection]);
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section 
@@ -28,32 +18,25 @@ const About = () => {
         id="about"
     >
         <SectionHeader>About Me</SectionHeader>
-        <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I&apos;m also
-        learning how to play the guitar.
-      </p>
+        <p className="mb-8 text-lg text-gray-700 dark:text-gray-300">
+          After graduating with a degree in{" "}
+          <span className="font-medium text-gray-900 dark:text-gray-100">Chemistry</span> and amassing over 8 years of experience in various industries,
+          I made the decision to pursue my passion for programming. I enrolled in a coding bootcamp, where I acquired skills in{" "}
+          <span className="font-medium">full-stack web development</span>.
+          <span className="italic">My favorite aspect of programming</span> is the thrill of problem-solving. I
+          <span className="underline">{" "}cherish</span> the satisfaction of unraveling complex issues.
+          My core tech stack includes{" "}
+          <span className="font-medium">Django, Postgresql, and React.js</span>.
+          I am also proficient in JavaScript and Figma. Constantly seeking new technologies to learn,
+          I am currently on the lookout for a{" "}
+          <span className="font-medium">full-time position</span> as a software developer.
+        </p>
+        <p className='text-gray-900 dark:text-gray-100'>
+          <span className="italic">When I&apos;m not coding</span>, I enjoy reading
+          books, particularly fiction. I also enjoy{" "}
+          <span className="font-medium">learning new things</span>{" "}
+          <span className="font-medium">& listening to podcasts</span>.
+        </p>
     </motion.section>
   )
 }
