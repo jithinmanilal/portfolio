@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import Cakesmiths from "@/public/Cakesmiths.png";
 import Nextnode from "@/public/Nextnode.png";
@@ -35,7 +34,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Brototype",
+    title: "Brototype | Trainee",
     location: "Cochin, Kerala",
     description:
       "I graduated Python full-stack web development program, gaining expertise in utilizing the Django framework, React.js, and PostgreSQL within a dynamic and collaborative learning environment.",

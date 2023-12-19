@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+A simple personal portfolio created using Next.js, Typescript, Tailwind Css, Framer Motion, React Email & Resend.
+
 First, run the development server:
 
 ```bash
